@@ -1,0 +1,13 @@
+.pink-div {
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+
+.black-tr {
+    border: 2px saddlebrown;
+    background-color: rgb(255, 123, 0);
+}
+
+.full{
+    background-color: rgb(255, 140, 0);
+}
