@@ -1,5 +1,5 @@
 style.css file
-div { border: solid 2px deeppink; }
+div { border: solid 4px deeppink; }
 /* The default: for mobile phones: */
 [class*="col-"] { width: 100%; }
 @media only screen and (min-width: 600px) {
