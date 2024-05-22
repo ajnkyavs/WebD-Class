@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <h2>DOM Demo</h2>
+    <div>
+      <p>This is a demo</p>
+      <a href="https://www.w3schools.com/js/js_htmldom.asp"
+        >JavaScript HTML DOM</a
+      >
+    </div>
+    <script>
+      // locate the <div> elements and pick the first one
+      var divElement = document.getElementsByTagName("div")[0];
+      // find the first child element inside the <div> (the <p> element)
+      var pElement = divElement.children[0];
+      // change the style
+      pElement.style.color = "blue";
+    </script>
+  </body>
+</html>
