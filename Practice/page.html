@@ -2,11 +2,26 @@
   <head>
     <title>Homepage</title>
   </head>
+  <style>
+    div.mystyle {
+      width: 300px;
+      margin: auto;
+    }
+  </style>
   <body>
-    <nav>
-      <a href="myself.html" target="_blank">myself</a>
-      <a href="form.html">form</a>
-      <a href="dom.html">dom</a>
-    </nav>
+    <div class="mystyle">
+      <div style="background-color: aqua">
+        <p>Enter payment option</p>
+      </div>
+      <input type="radio" id="ra1" name="pay" value="cash" />
+      <label for="ra1">Cash</label>
+      <input type="text" id="ra2" name="pay" value="exp@domain.com" />
+      <label for="ra2">Card</label>
+      <nav>
+        <a href="myself.html" target="_blank">myself</a>
+        <a href="form.html">form</a>
+        <a href="dom.html">dom</a>
+      </nav>
+    </div>
   </body>
 </html>
