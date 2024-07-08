@@ -1,0 +1,17 @@
+document.getElementById('orderForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const components = Array.from(document.getElementById('components').selectedOptions).map(option => option.value);
+    const quantity = document.getElementById('quantity').value;
+    
+    // Display order summary
+    document.getElementById('summaryName').textContent = name;
+    document.getElementById('summaryEmail').textContent = email;
+    document.getElementById('summaryComponents').textContent = components.join(', ');
+    document.getElementById('summaryQuantity').textContent = quantity;
+    
+    document.getElementById('orderSummary').classList.remove('hidden');
+});
