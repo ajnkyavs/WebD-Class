@@ -1,14 +1,14 @@
 document.getElementById('orderForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Check if form is valid
+    // Checking if form is valid
     if (this.checkValidity() === false) {
         event.stopPropagation();
         this.classList.add('was-validated');
         return;
     }
     
-    // Get form values
+    // Getting form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const components = Array.from(document.getElementById('components').selectedOptions).map(option => option.value);
