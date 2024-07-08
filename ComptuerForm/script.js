@@ -1,5 +1,12 @@
 document.getElementById('orderForm').addEventListener('submit', function(event) {
     event.preventDefault();
+
+    // Check if form is valid
+    if (this.checkValidity() === false) {
+        event.stopPropagation();
+        this.classList.add('was-validated');
+        return;
+    }
     
     // Get form values
     const name = document.getElementById('name').value;
